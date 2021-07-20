@@ -1,5 +1,4 @@
-# DArT-Activities
-Standart operation procedures of bioinformatics activities for DArT markers
+# DArT Raw Reads Download
 
 To download all the raw reads from Diversity Array Technology website (DArT).
 Here we are going to show an efficient and easy download by linux OS.
