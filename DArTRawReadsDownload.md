@@ -5,10 +5,10 @@ Here we are going to show an efficient and easy download by linux OS.
 To download the raw reads you will have to follow the steps:
 1. Login the user that submitted the DArT genotyping order;
 2. Click at the `List Authetication Tokens` section, and look for a validy token,
-![List Authentication Tokens Setion](https://user-images.githubusercontent.com/42940692/126247258-3a089a15-a500-4d59-ae94-3387391674f5.png)
+![List Authentication Tokens Section](https://user-images.githubusercontent.com/42940692/126360500-015a4e6e-5f54-42e4-94ba-52872e5755d3.png)
 
  you can create a new token at the `New Authetication Token` if you needed it.
-![New Authentication Token Setion](https://user-images.githubusercontent.com/42940692/126247048-befb989c-74d1-476e-bf38-5c591d67f2e4.png)
+![New Authentication Token Section](https://user-images.githubusercontent.com/42940692/126360530-f114ff26-9efb-4e95-abd6-4382afd10479.png)
 
 > Obs.: Do not worry with the ip linked to the token, you could use a token generated from a different ip.
 3. Look forward for the link from the ordering site, it will be similar to the following one:
@@ -21,7 +21,8 @@ To download the raw reads you will have to follow the steps:
 
 4. Finally you will add this information at the following linux command:
 > 
-> wget -r -nH --cut-dirs=3 --header 'Authorization: COPIED_AUTH_TOKEN' `https://ordering.diversityarrays.com/clients/xxx/yyy/Raw_Data_Index.html`
- 
+````linux
+wget -r -nH --cut-dirs=3 --header 'Authorization: COPIED_AUTH_TOKEN' `https://ordering.diversityarrays.com/clients/xxx/yyy/Raw_Data_Index.html`
+````
 
 > You just need to change `COPIED_AUTH_TOKEN` for the validy token, and the respective link to the service number. 
